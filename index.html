@@ -16,8 +16,8 @@
   <body class="m-10 shadow-gray-500 shadow-lg p-10">
     <div class="container mx-auto max-w-5xl">
       <!-- HEADER -->
-      <section
-        class="grid grid-cols-1 md:grid-cols-3 items-center border-b-2 border-indigo-300"
+      <header
+        class="grid grid-cols-1 md:grid-cols-3 items-center border-b-2 border-indigo-300 pb-8 mb-10"
       >
         <div id="conteneurToggle">
           <label class="switch" aria-label="Switch mode sombre">
@@ -27,13 +27,14 @@
           <span class="label-text">Mode sombre</span>
         </div>
         <div class="md:col-span-2 flex flex-col items-end">
-          <h1 class="font-bold text-5xl tracking-widest leading-tight">
-            Fabienne SAUBERT
+          <h1 class="font-bold text-indigo-700 leading-tight">
+            STAGE DÉVELOPPEUR APPLICATION WEB
           </h1>
+
           <h2
-            class="text-2xl mt-4 text-indigo-700 font-semibold tracking-wide uppercase"
+            class="Nom text-2xl mt-6 font-semibold tracking-wide uppercase mb-8"
           >
-            Développeur Application Junior
+            Fabienne Saubert
           </h2>
 
           <ul
@@ -48,7 +49,7 @@
               >
             </li>
             <li><b>Téléphone :</b> 06.29.13.81.03</li>
-            <li><b>Adresse :</b> Route de Pézenas, 34230 Paulhan</li>
+            <li><b>Adresse : </b>34230 Paulhan</li>
           </ul>
         </div>
         <!-- PHOTO -->
@@ -56,32 +57,29 @@
           class="flex justify-center md:justify-end items-center mt-6 md:mt-0"
         >
           <img
-            src="./images/PhotoCV.webp"
+            src="/images/PhotoCV.webp"
             alt="Photo de Fabienne Saubert"
-            class="max-w-[250px] h-auto rounded-md mb-5"
+            class="max-w-[250px] h-auto rounded-md"
             fetchpriority="high"
           />
         </div>
-      </section>
-      <article class="w-full border-b-2 border-indigo-300 text-center">
-        <h2 class="font-semibold text-xl mb-2 flex justify-center p-2">
-          <strong
-            >Recherche de stage pour la période du 09 mars au 07 mai
-            2026.</strong
-          >
-        </h2>
-        <p class="mb-5">
+      </header>
+      <section
+        class="col-span-full border-b-2 border-indigo-300 text-center py-4 mb-5"
+      >
+        <h3 class="font-bold mb-5 text-xl">
+          RECHERCHE STAGE pour la période du 09 mars au 07 mai 2026
+        </h3>
+        <p class="mb-10 text-lg">
           Points à valider lors du stage : Développer la partie front-end et
           back-end d’une application web ou web mobile sécurisée.
         </p>
-      </article>
+      </section>
 
       <!-- MAIN -->
       <main class="grid md:grid-cols-3 gap-8 leading-9 tracking-widest">
         <!-- COLONNE GAUCHE -->
-        <div
-          class="md:col-span-1 pr-6 border-r border-gray-200 space-y-20 mt-8"
-        >
+        <div class="md:col-span-1 pr-6 border-r border-gray-200 space-y-20">
           <!-- Profil -->
           <section id="profile" class="pb-6">
             <h2
@@ -92,10 +90,11 @@
             <p class="text-lg leading-8 font-medium">
               Ancienne directrice de magasin, j’ai dirigé plusieurs centres de
               profit avant de me reconvertir dans un domaine qui me passionne :
-              le développement informatique. Curieuse, organisée et
-              persévérante, je m’appuie sur mes compétences en gestion et en
-              analyse pour progresser dans cette nouvelle voie et contribuer
-              efficacement aux projets de mon futur employeur.
+              le développement informatique.
+              <br /><br />Curieuse, organisée et persévérante, je m’appuie sur
+              mes compétences en gestion et en analyse pour progresser dans
+              cette nouvelle voie et contribuer efficacement aux projets de mon
+              futur employeur.
             </p>
           </section>
 
@@ -106,14 +105,14 @@
             >
               FORMATION
             </h2>
-            <ul class="ml-1 text-lg font-medium space-y-5">
+            <ul class="ml-1 text-lg font-medium">
               <li>
-                <b>2025 (en cours...) :</b> Titre professionnel Développeur web
-                et web mobile
+                <b>2025 (en cours...) :</b> Titre professionnel Développeur
+                Application web et web mobile - Niveau V
               </li>
-              <li><b>2019 :</b> BTS Gestionnaire d’entreprise</li>
-              <li><b>2014 :</b> DAEU A</li>
-              <li><b>2006 :</b> BEP Vente</li>
+              <li class="mt-3"><b>2019 :</b> BTS Gestionnaire d’entreprise</li>
+              <li class="mt-3"><b>2014 :</b> DAEU A</li>
+              <li class="mt-3"><b>2006 :</b> BEP Vente</li>
             </ul>
           </section>
 
@@ -125,11 +124,11 @@
               SOFT SKILLS
             </h2>
             <ul class="text-lg font-medium space-y-4 list-disc ml-6">
-              <li>Curiosité intellectuelle</li>
-              <li>Esprit analytique et structuré</li>
-              <li>Résolution de problèmes</li>
-              <li>Prise d’initiative</li>
-              <li>Travail sous pression</li>
+              <li class="mt-3">Curiosité intellectuelle</li>
+              <li class="mt-3">Esprit analytique et structuré</li>
+              <li class="mt-3">Résolution de problèmes</li>
+              <li class="mt-3">Prise d’initiative</li>
+              <li class="mt-3">Travail sous pression</li>
             </ul>
           </section>
         </div>
@@ -140,7 +139,7 @@
         <section class="md:col-span-2 pl-0 md:pl-8">
           <!-- <ul class="text-lg font-medium space-y-4 ml-6 inline-flex gap-4"> -->
           <table
-            class="w-full border-separate table-fixed border-spacing-x-3 border-spacing-y-5 mt-8"
+            class="w-full border-separate table-fixed border-spacing-x-3 border-spacing-y-5"
           >
             <caption
               class="pb-3 mb-5 text-2xl font-bold tracking-widest text-indigo-700 text-start"
@@ -186,11 +185,9 @@
                     src="./images/logoREACT.webp"
                     alt="Logo React"
                     title="React"
-                    class="w-22"
+                    class="w-20"
                   />
                 </td>
-              </tr>
-              <tr>
                 <td>
                   <img
                     src="./images/logoVS.webp"
@@ -199,6 +196,8 @@
                     title="VS Code"
                   />
                 </td>
+              </tr>
+              <tr>
                 <td>
                   <img
                     src="./images/logoTRELLO.webp"
@@ -231,8 +230,6 @@
                     title="Symfony"
                   />
                 </td>
-              </tr>
-              <tr>
                 <td>
                   <img
                     src="./images/logoTAILWIND.webp"
@@ -249,7 +246,8 @@
                     title="Bootstrap"
                   />
                 </td>
-
+              </tr>
+              <tr>
                 <td>
                   <img
                     src="./images/logoSQL.webp"
@@ -268,10 +266,34 @@
                 </td>
                 <td>
                   <img
+                    src="./images/logoEXPRESS.webp"
+                    alt="Logo Node JS, Express, MongoDB"
+                    class="w-22"
+                    title="Node JS, Expresss, MongoDB"
+                  />
+                </td>
+                <td>
+                  <img
                     src="./images/logoGREEN.webp"
                     alt="Logo >Green Code"
                     class="w-18"
                     title="Green Code"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/logoLINUX.webp"
+                    alt="logo Linux"
+                    class="w-15"
+                    title="WSL Ubuntu"
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./images/logoWINDOWS.webp"
+                    alt="logo Windows"
+                    class="w-15"
+                    title="Windows"
                   />
                 </td>
               </tr>
@@ -281,12 +303,14 @@
           <h2
             class="text-2xl font-bold tracking-widest text-indigo-700 mb-8 mt-10"
           >
-            PROJETS DÉVELOPPEMENT
+            EXPÉRIENCES PROFESSIONNELLES
           </h2>
 
           <section class="mb-10 space-y-5 p-5">
-            <h3 class="font-bold text-lg mb-5">Mon CV en ligne</h3>
-            <ul class="list-disc ml-6 mt-3 text-lg font-medium space-y-2">
+            <h3 class="font-bold text-lg mb-5">
+              Formation développeur | Mon CV en ligne
+            </h3>
+            <ul class="list-disc ml-6 mt-3 text-lg font-medium leading-9">
               <li>Première version en CSS pur</li>
               <li>Deuxième version avec Tailwindcss</li>
               <li>
@@ -303,8 +327,10 @@
             </ul>
           </section>
           <section class="mb-10 space-y-5 p-5">
-            <h3 class="font-bold text-lg mb-5">Projet “Netflix”</h3>
-            <ul class="list-disc ml-6 mt-3 text-lg font-medium space-y-2">
+            <h3 class="font-bold text-lg mb-5">
+              Formation développeur | Projet “Netflix”
+            </h3>
+            <ul class="list-disc ml-6 mt-3 text-lg font-medium leading-9">
               <li>Première version : HTML / CSS</li>
               <li>Deuxième version : requête sur fichier XML</li>
               <li>Troisième version : requête sur fichier JSON</li>
@@ -320,8 +346,10 @@
             </ul>
           </section>
           <section class="mb-10 space-y-5 p-5">
-            <h3 class="font-bold text-lg mb-5">Projet Green Code</h3>
-            <ul class="list-disc ml-6 mt-3 text-lg font-medium space-y-2">
+            <h3 class="font-bold text-lg mb-5">
+              Formation développeur | Projet Green Code
+            </h3>
+            <ul class="list-disc ml-6 mt-3 text-lg font-medium leading-9">
               <li>Site vitrine HTML / CSS / JavaScript</li>
               <li>CSS via Bootstrap et CSS pur</li>
               <li>JavaScript : menu burger sur mobile et mode sombre</li>
@@ -335,6 +363,17 @@
                   >Repository Green Code</a
                 >
               </li>
+            </ul>
+          </section>
+          <section class="mb-10 space-y-5 p-5">
+            <h3 class="font-bold text-lg">Directrice de magasin | ACTION</h3>
+            <h4 class="italic">Juillet 2020 à mars 2024</h4>
+            <ul class="list-disc ml-6 mt-3 text-lg font-medium leading-9">
+              <li>Gestion d’équipe</li>
+              <li>Création et analyse des tableaux de bords</li>
+              <li>Suivi des KPI</li>
+              <li>Calcul des prévisionnels</li>
+              <li>Gestion RH</li>
             </ul>
           </section>
         </section>
