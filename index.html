@@ -10,6 +10,18 @@
     <link rel="icon" type="image/png" href="./images/InitialesFavi.png" />
     <link rel="stylesheet" href="./minified.css" />
     <link rel="stylesheet" href="./minifiedOutput.css" />
+    <style>
+      /* Logos : petits sur mobile, taille normale sur desktop */
+      .logo-img {
+        width: 28px;
+        height: auto;
+      }
+      @media (min-width: 768px) {
+        .logo-img {
+          width: 60px;
+        }
+      }
+    </style>
     <title>
       Fabienne Saubert – Concepteur Développeur d'Applications – Alternance
       2026-2027
@@ -47,7 +59,7 @@
           <!-- === BLOC CONTACT CENTRÉ === -->
           <div class="mt-10 flex justify-center w-full">
             <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-y-4 text-lg font-medium text-gray-700"
+              class="grid grid-cols-1 md:grid-cols-2 gap-y-4 text-lg font-medium text-gray-700 contact"
               style="column-gap: 4rem"
             >
               <div class="space-y-4">
@@ -75,7 +87,8 @@
           <img
             src="images/PhotoCV.webp"
             alt="Photo de Fabienne Saubert"
-            class="max-w-[200px] md:max-w-[250px] h-auto rounded-md"
+            class="h-auto rounded-md"
+            style="width: 200px; max-width: 100%"
             fetchpriority="high"
           />
         </div>
@@ -160,178 +173,140 @@
         </div>
 
         <!-- COLONNE DROITE -->
-        <section class="md:col-span-2 pl-0 md:pl-8">
+        <section class="md:col-span-2 pl-0 md:pl-8 overflow-hidden">
           <!-- Logos scrollables sur mobile -->
-          <div class="overflow-x-auto w-full">
-            <table
-              class="border-separate table-fixed border-spacing-x-3 border-spacing-y-5"
+          <div class="mb-8">
+            <p
+              class="pb-3 mb-5 text-2xl font-bold tracking-widest text-indigo-700"
             >
-              <caption
-                class="pb-3 mb-5 text-2xl font-bold tracking-widest text-indigo-700 text-start"
-              >
-                LANGAGES & OUTILS
-              </caption>
-              <tbody>
-                <tr>
-                  <td>
-                    <img
-                      src="./images/logoHTML.webp"
-                      alt="Logo HTML"
-                      class="w-15"
-                      title="HTML"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoCSS.webp"
-                      alt="Logo CSS"
-                      class="w-15"
-                      title="CSS"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoJS.webp"
-                      alt="Logo Javascript"
-                      class="w-15"
-                      title="Javascript"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/PHP-logo.webp"
-                      alt="Logo PHP"
-                      class="w-25"
-                      title="PHP"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoREACT.webp"
-                      alt="Logo React"
-                      title="React"
-                      class="w-20"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoEXPRESS.webp"
-                      alt="Logo Node JS, Express, MongoDB"
-                      class="w-22"
-                      title="Node JS, Express, MongoDB"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoVS.webp"
-                      alt="Logo VS Code"
-                      class="w-15"
-                      title="VS Code"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      src="./images/logoTRELLO.webp"
-                      alt="Logo Trello"
-                      class="w-15"
-                      title="Trello"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/LogoGitHub.webp"
-                      alt="Logo Github"
-                      class="w-15"
-                      title="GitHub"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoGitLab.webp"
-                      alt="Logo GitLab"
-                      class="w-15"
-                      title="Gitlab"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoDOCKER.webp"
-                      alt="Logo de Docker"
-                      title="Docker"
-                      class="w-18 -ml-2"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoSYMFONY.webp"
-                      alt="Logo Symfony"
-                      class="w-15"
-                      title="Symfony"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoTAILWIND.webp"
-                      alt="Logo Tailwind"
-                      class="w-20 -ml-2"
-                      title="Tailwind"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoBOOTSTRAP.webp"
-                      alt="Logo Bootstrap"
-                      class="w-20"
-                      title="Bootstrap"
-                    />
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img
-                      src="./images/logoSQL.webp"
-                      alt="Logo SQL"
-                      class="w-15"
-                      title="SQL"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoMYSQL.webp"
-                      alt="Logo MySQL"
-                      class="w-22"
-                      title="MySQL"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoGREEN.webp"
-                      alt="Logo Green Code"
-                      class="w-18"
-                      title="Green Code"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoLINUX.webp"
-                      alt="logo Linux"
-                      class="w-15"
-                      title="WSL Ubuntu"
-                    />
-                  </td>
-                  <td>
-                    <img
-                      src="./images/logoWINDOWS.webp"
-                      alt="logo Windows"
-                      class="w-15"
-                      title="Windows"
-                    />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+              LANGAGES & OUTILS
+            </p>
+
+            <!-- Ligne 1 -->
+            <div class="flex items-center gap-6 mb-6 flex-wrap">
+              <img
+                src="./images/logoHTML.webp"
+                alt="Logo HTML"
+                title="HTML"
+                class="logo-img mb-5"
+              />
+              <img
+                src="./images/logoCSS.webp"
+                alt="Logo CSS"
+                title="CSS"
+                class="logo-img mb-5"
+              />
+              <img
+                src="./images/logoJS.webp"
+                alt="Logo Javascript"
+                title="Javascript"
+                class="logo-img mb-5"
+              />
+              <img
+                src="./images/PHP-logo.webp"
+                alt="Logo PHP"
+                title="PHP"
+                class="logo-img mb-5"
+              />
+              <img
+                src="./images/logoREACT.webp"
+                alt="Logo React"
+                title="React"
+                class="logo-img mb-5"
+              />
+              <img
+                src="./images/logoEXPRESS.webp"
+                alt="Logo Express"
+                title="Node JS, Express, MongoDB"
+                class="logo-img"
+              />
+              <img
+                src="./images/logoVS.webp"
+                alt="Logo VS Code"
+                title="VS Code"
+                class="logo-img mb-5"
+              />
+            </div>
+
+            <!-- Ligne 2 -->
+            <div class="flex items-center gap-6 mb-6 flex-wrap">
+              <img
+                src="./images/logoTRELLO.webp"
+                alt="Logo Trello"
+                title="Trello"
+                class="logo-img mb-5"
+              />
+              <img
+                src="./images/LogoGitHub.webp"
+                alt="Logo Github"
+                title="GitHub"
+                class="logo-img mb-5"
+              />
+              <img
+                src="./images/logoGitLab.webp"
+                alt="Logo GitLab"
+                title="Gitlab"
+                class="logo-img mb-5"
+              />
+              <img
+                src="./images/logoDOCKER.webp"
+                alt="Logo Docker"
+                title="Docker"
+                class="logo-img mb-5"
+              />
+              <img
+                src="./images/logoSYMFONY.webp"
+                alt="Logo Symfony"
+                title="Symfony"
+                class="logo-img mb-5"
+              />
+              <img
+                src="./images/logoTAILWIND.webp"
+                alt="Logo Tailwind"
+                title="Tailwind"
+                class="logo-img mb-5"
+              />
+              <img
+                src="./images/logoBOOTSTRAP.webp"
+                alt="Logo Bootstrap"
+                title="Bootstrap"
+                class="logo-img mb-5"
+              />
+            </div>
+
+            <!-- Ligne 3 -->
+            <div class="flex items-center gap-6 flex-wrap">
+              <img
+                src="./images/logoSQL.webp"
+                alt="Logo SQL"
+                title="SQL"
+                class="logo-img"
+              />
+              <img
+                src="./images/logoMYSQL.webp"
+                alt="Logo MySQL"
+                title="MySQL"
+                class="logo-img"
+              />
+              <img
+                src="./images/logoGREEN.webp"
+                alt="Logo Green"
+                title="Green Code"
+                class="logo-img"
+              />
+              <img
+                src="./images/logoLINUX.webp"
+                alt="logo Linux"
+                title="WSL Ubuntu"
+                class="logo-img"
+              />
+              <img
+                src="./images/logoWINDOWS.webp"
+                alt="logo Windows"
+                title="Windows"
+                class="logo-img"
+              />
+            </div>
           </div>
 
           <h2
@@ -340,6 +315,69 @@
             EXPÉRIENCES PROFESSIONNELLES
           </h2>
 
+          <section class="mb-3 space-y-5 p-5">
+            <h3 class="font-bold text-lg mb-5">
+              Stage de formation développeur - Full remote | Projet "HarmoCare"
+              pour les laboratoires RENASCORE
+            </h3>
+            <ul class="list-disc ml-6 mt-3 text-lg font-medium leading-9">
+              <li>
+                Développement d'une application mettant en relation patients
+                atteints du cancer et professionnels de santé.
+              </li>
+              <li>Conception : Mockup, UML, méthode Merise</li>
+              <li>Frontend : React / Bootstrap</li>
+              <li>Backend : Node.js / Supabase</li>
+            </ul>
+          </section>
+          <section class="mb-3 space-y-5 p-5">
+            <h3 class="font-bold text-lg mb-5">
+              Formation développeur | Projet "Adopte Un Boss"
+            </h3>
+            <ul class="list-disc ml-6 mt-3 text-lg font-medium leading-9">
+              <li>
+                Développement d'une application de recrutement offrant aux
+                candidats et aux recruteurs un système de matching selon les
+                soft skills et les hard skills du candidats et des offres
+                postées par les recruteurs. Le but étant d'optimiser la
+                recherche d'emploi pour le candidat et le recrutement pour le
+                recruteur.
+              </li>
+              <li>Frontend : React / Vite</li>
+              <li>Backend : Symfony / SQL</li>
+              <li>Version mobile (en cours...) : Flutter</li>
+              <li>
+                Lien GitLab :
+                <a
+                  class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline lienGit"
+                  href="https://gitlab.com/users/Fabienne_Saubert/contributed"
+                  aria-label="Lien Gilab vers projet Adopte Un Boss"
+                  >Repository Adopte Un Boss</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="mb-3 space-y-5 p-5">
+            <h3 class="font-bold text-lg mb-5">
+              Formation développeur | Projet "Netflop"
+            </h3>
+            <ul class="list-disc ml-6 mt-3 text-lg font-medium leading-9">
+              <li>Création d'un site façon Netflix pour appréhender les requêtes et les API</li>
+              <li>Première version : HTML / CSS</li>
+              <li>Deuxième version : requête sur fichier XML</li>
+              <li>Troisième version : requête sur fichier JSON</li>
+              <li>Quatrième version : requête API (TMDB)</li>
+              <li>
+                Lien GitHub :
+                <a
+                  class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline lienGit"
+                  href="Lien GitHub : https://github.com/FabienneSaubert/Projet-Netflix.git"
+                  aria-label="Lien Github vers projet Netflop"
+                  >Repository Netflop</a
+                >
+              </li>
+            </ul>
+          </section>
           <section class="mb-3 space-y-5 p-5">
             <h3 class="font-bold text-lg mb-5">
               Formation développeur | Mon CV en ligne
@@ -361,65 +399,7 @@
               </li>
             </ul>
           </section>
-
-          <section class="mb-3 space-y-5 p-5">
-            <h3 class="font-bold text-lg mb-5">
-              STAGE DE FORMATION DÉVELOPPEUR - Full remote | Projet "HarmoCare"
-              pour les laboratoires RENASCORE
-            </h3>
-            <ul class="list-disc ml-6 mt-3 text-lg font-medium leading-9">
-              <li>
-                Développement d'une application mettant en relation patients
-                atteints du cancer et professionnels de santé.
-              </li>
-              <li>Conception : Mockup, UML, méthode Merise</li>
-              <li>Frontend : React / Bootstrap</li>
-              <li>Backend : Node.js / Supabase</li>
-            </ul>
-          </section>
-
-          <section class="mb-3 space-y-5 p-5">
-            <h3 class="font-bold text-lg mb-5">
-              Formation développeur | Projet "Netflix"
-            </h3>
-            <ul class="list-disc ml-6 mt-3 text-lg font-medium leading-9">
-              <li>Première version : HTML / CSS</li>
-              <li>Deuxième version : requête sur fichier XML</li>
-              <li>Troisième version : requête sur fichier JSON</li>
-              <li>Quatrième version : requête API</li>
-              <li>
-                Lien GitHub :
-                <a
-                  class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline lienGit"
-                  href="https://github.com/FabienneSaubert/Projet-Netflix"
-                  aria-label="Lien Github vers projet Netflix/API"
-                  >Repository Netflix</a
-                >
-              </li>
-            </ul>
-          </section>
-
-          <section class="mb-3 space-y-5 p-5">
-            <h3 class="font-bold text-lg mb-5">
-              Formation développeur | Projet Green Code
-            </h3>
-            <ul class="list-disc ml-6 mt-3 text-lg font-medium leading-9">
-              <li>Site vitrine HTML / CSS / JavaScript</li>
-              <li>CSS via Bootstrap et CSS pur</li>
-              <li>JavaScript : menu burger sur mobile et mode sombre</li>
-              <li>Optimisation du site selon les normes Green Code</li>
-              <li>JavaScript et CSS minifiés</li>
-              <li>
-                Lien GitHub :
-                <a
-                  class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline lienGit"
-                  href="https://github.com/FabienneSaubert/Green-code"
-                  aria-label="Lien Github vers projet Green Code"
-                  >Repository Green Code</a
-                >
-              </li>
-            </ul>
-          </section>
+          
 
           <section class="mb-3 space-y-5 p-5">
             <h3 class="font-bold text-lg">Directrice de magasin | ACTION</h3>
@@ -455,20 +435,7 @@
                 <img
                   src="./images/LogoGithub.webp"
                   alt="GitHub"
-                  class="h-auto w-14"
-                  loading="lazy"
-                />
-              </a>
-              <a
-                class="hover:rotate-8 duration-200"
-                href="https://www.linkedin.com/in/fabienne-saubert"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="./images/linkedin-logo-240x212.webp"
-                  alt="LinkedIn"
-                  class="h-auto w-14"
+                  class="logo-img"
                   loading="lazy"
                 />
               </a>
@@ -481,7 +448,20 @@
                 <img
                   src="./images/logoGitLab.webp"
                   alt="GitLab"
-                  class="h-auto w-14"
+                  class="logo-img"
+                  loading="lazy"
+                />
+              </a>
+              <a
+                class="hover:rotate-8 duration-200"
+                href="https://www.linkedin.com/in/fabienne-saubert"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./images/linkedin-logo-240x212.webp"
+                  alt="LinkedIn"
+                  class="logo-img
                   loading="lazy"
                 />
               </a>
