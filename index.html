@@ -12,22 +12,26 @@
     <link rel="stylesheet" href="./minifiedOutput.css" />
     <style>
       /* Base : Style pour mobile (Mobile First) */
-      .logo-img {
-        width: 32px;
-        height: auto;
-        object-fit: contain;
+      html {
+        font-size: 12px;
       }
 
-      h1 {
-        font-size: 1.5rem;
+      @media (min-width: 768px) {
+        html {
+          font-size: 14px;
+        }
       }
-      h2 {
-        font-size: 1.2rem;
+      .logo-img {
+        width: 32px;
+        max-width: 40px;
+        height: auto;
       }
-      p,
-      li {
-        font-size: 0.95rem;
-        line-height: 1.5;
+
+      @media (min-width: 768px) {
+        .logo-img {
+          width: 50px;
+          max-width: 50px;
+        }
       }
 
       .wrap-break-word {
@@ -42,10 +46,10 @@
           width: 50px;
         }
         h1 {
-          font-size: 2.5rem;
+          font-size: 1.5rem;
         }
         h2 {
-          font-size: 1.8rem;
+          font-size: 1.2rem;
         }
         p,
         li {
@@ -60,7 +64,9 @@
     </title>
   </head>
 
-  <body class="m-10 md:m-6 p-4 md:p-10 shadow-gray-500 shadow-lg">
+  <body
+    class="m-10 md:m-8 p-4 md:p-10 shadow-gray-500 shadow-lg overflow-hidden"
+  >
     <div class="container mx-auto max-w-5xl px-4 md:px-0">
       <!-- HEADER -->
       <header
@@ -84,14 +90,14 @@
             </h2>
           </div>
 
-          <h2 class="Nom text-2xl mt-12 font-semibold tracking-wide uppercase">
+          <h2 class="Nom mt-12 font-semibold tracking-wide uppercase">
             Fabienne Saubert
           </h2>
 
           <!-- === BLOC CONTACT CENTRÉ === -->
           <div class="mt-10 flex justify-center w-full">
             <div
-              class="grid grid-cols-1 md:grid-cols-2 gap-y-4 text-lg font-medium text-gray-700 contact"
+              class="grid grid-cols-1 md:grid-cols-2 gap-y-4 font-medium text-gray-700 contact"
               style="column-gap: 4rem"
             >
               <div class="space-y-4">
@@ -129,10 +135,10 @@
       <section
         class="col-span-full border-b-2 border-indigo-300 text-center py-4 mb-5"
       >
-        <h3 class="font-bold mb-5 text-xl">
+        <h3 class="font-bold mb-5">
           Recherche ALTERNANCE pour la rentrée 2026.
         </h3>
-        <p class="mb-10 text-lg">
+        <p class="mb-10">
           Actuellement en formation Développeur web et web mobile, je souhaite
           poursuivre mon parcours en alternance afin de me diplômer d'une
           licence Concepteur développeur d'applications. Ouverte aux postes en
@@ -154,7 +160,7 @@
             >
               PROFIL
             </h2>
-            <p class="text-lg leading-8 font-medium wrap-break-word">
+            <p class="leading-8 font-medium wrap-break-word">
               Ancienne directrice de magasin, j'ai dirigé plusieurs centres de
               profits avant de me reconvertir dans un domaine qui me passionne :
               le développement informatique.
@@ -167,12 +173,10 @@
 
           <!-- Formation -->
           <section id="formation" class="pb-6 mt-8">
-            <h2
-              class="pb-3 text-2xl font-bold tracking-widest text-indigo-700 mb-5"
-            >
+            <h2 class="pb-3 font-bold tracking-widest text-indigo-700 mb-5">
               FORMATION
             </h2>
-            <ul class="ml-1 text-lg font-medium wrap-break-word">
+            <ul class="ml-1 font-medium wrap-break-word">
               <li>
                 <b>2025 (en cours...) :</b> Titre professionnel Développeur
                 Application web et web mobile (RNCP31114) - Niveau 5
@@ -185,14 +189,10 @@
 
           <!-- Soft skills -->
           <section class="mt-8">
-            <h2
-              class="pb-3 text-2xl font-bold tracking-widest text-indigo-700 mb-5"
-            >
+            <h2 class="pb-3 font-bold tracking-widest text-indigo-700 mb-5">
               SOFT SKILLS
             </h2>
-            <ul
-              class="text-lg font-medium space-y-4 list-disc ml-6 wrap-break-word"
-            >
+            <ul class="font-medium space-y-4 list-disc ml-6 wrap-break-word">
               <li class="mt-3">Curiosité intellectuelle</li>
               <li class="mt-3">Esprit analytique et structuré</li>
               <li class="mt-3">Résolution de problèmes</li>
@@ -210,16 +210,19 @@
         <section
           class="md:col-span-2 md:pl-8 border-l-0 md:border-l-2 border-indigo-300 overflow-hidden"
         >
-          <!-- Logos scrollables sur mobile -->
           <div class="mb-8">
-            <p
-              class="pb-3 mb-5 text-2xl font-bold tracking-widest text-indigo-700"
-            >
+            <h2 class="pb-3 mb-5 font-bold tracking-widest text-indigo-700">
               LANGAGES & OUTILS
-            </p>
-
+            </h2>
             <!-- Ligne 1 -->
-            <div class="flex items-center gap-6 mb-6 flex-wrap">
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                align-items: center;
+              "
+            >
               <img
                 src="./images/logoHTML.webp"
                 alt="Logo HTML"
@@ -262,10 +265,9 @@
                 title="VS Code"
                 class="logo-img mb-5"
               />
-            </div>
 
-            <!-- Ligne 2 -->
-            <div class="flex items-center gap-6 mb-6 flex-wrap">
+              <!-- Ligne 2 -->
+
               <img
                 src="./images/logoTRELLO.webp"
                 alt="Logo Trello"
@@ -308,10 +310,9 @@
                 title="Bootstrap"
                 class="logo-img mb-5"
               />
-            </div>
 
-            <!-- Ligne 3 -->
-            <div class="flex items-center gap-6 flex-wrap">
+              <!-- Ligne 3 -->
+
               <img
                 src="./images/logoSQL.webp"
                 alt="Logo SQL"
@@ -345,19 +346,17 @@
             </div>
           </div>
 
-          <h2
-            class="text-2xl font-bold tracking-widest text-indigo-700 mb-8 mt-10"
-          >
+          <h2 class="font-bold tracking-widest text-indigo-700 mb-8 mt-10">
             EXPÉRIENCES PROFESSIONNELLES
           </h2>
 
           <section class="mb-3 space-y-5 p-5 overflow-hidden">
-            <h3 class="font-bold text-lg mb-5">
+            <h3 class="font-bold mb-5">
               Stage de formation développeur - Full remote | Projet "HarmoCare"
               pour les laboratoires RENASCORE
             </h3>
             <ul
-              class="list-disc ml-6 mt-3 text-lg font-medium leading-9 wrap-break-word"
+              class="list-disc ml-6 mt-3 font-medium leading-9 wrap-break-word"
             >
               <li>
                 Développement d'une application mettant en relation patients
@@ -369,11 +368,11 @@
             </ul>
           </section>
           <section class="mb-3 space-y-5 p-5">
-            <h3 class="font-bold text-lg mb-5">
+            <h3 class="font-bold mb-5">
               Formation développeur | Projet "Adopte Un Boss"
             </h3>
             <ul
-              class="list-disc ml-6 mt-3 text-lg font-medium leading-9 wrap-break-word"
+              class="list-disc ml-6 mt-3 font-medium leading-9 wrap-break-word"
             >
               <li>
                 Développement d'une application de recrutement offrant aux
@@ -391,18 +390,18 @@
                 <a
                   class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline lienGit"
                   href="https://gitlab.com/users/Fabienne_Saubert/contributed"
-                  aria-label="Lien Gilab vers projet Adopte Un Boss"
+                  aria-label="Lien Gitlab vers projet Adopte Un Boss"
                   >Repository Adopte Un Boss</a
                 >
               </li>
             </ul>
           </section>
           <section class="mb-3 space-y-5 p-5">
-            <h3 class="font-bold text-lg mb-5">
+            <h3 class="font-bold mb-5">
               Formation développeur | Projet "Netflop"
             </h3>
             <ul
-              class="list-disc ml-6 mt-3 text-lg font-medium leading-9 wrap-break-word"
+              class="list-disc ml-6 mt-3 font-medium leading-9 wrap-break-word"
             >
               <li>
                 Création d'un site façon Netflix pour appréhender les requêtes
@@ -416,7 +415,7 @@
                 Lien GitHub :
                 <a
                   class="hover:text-indigo-600 hover:translate-x-1 inline-block transition-transform duration-200 underline lienGit"
-                  href="Lien GitHub : https://github.com/FabienneSaubert/Projet-Netflix.git"
+                  href="https://github.com/FabienneSaubert/Projet-Netflix.git"
                   aria-label="Lien Github vers projet Netflop"
                   >Repository Netflop</a
                 >
@@ -424,11 +423,11 @@
             </ul>
           </section>
           <section class="mb-3 space-y-5 p-5">
-            <h3 class="font-bold text-lg mb-5">
+            <h3 class="font-bold mb-5">
               Formation développeur | Mon CV en ligne
             </h3>
             <ul
-              class="list-disc ml-6 mt-3 text-lg font-medium leading-9 wrap-break-word"
+              class="list-disc ml-6 mt-3 font-medium leading-9 wrap-break-word"
             >
               <li>Première version en CSS pur</li>
               <li>Deuxième version avec Tailwindcss</li>
@@ -448,10 +447,10 @@
           </section>
 
           <section class="mb-3 space-y-5 p-5">
-            <h3 class="font-bold text-lg">Directrice de magasin | ACTION</h3>
+            <h3 class="font-bold">Directrice de magasin | ACTION</h3>
             <h4 class="italic">Juillet 2020 à mars 2024</h4>
             <ul
-              class="list-disc ml-6 mt-3 text-lg font-medium leading-9 wrap-break-word"
+              class="list-disc ml-6 mt-3 font-medium leading-9 wrap-break-word"
             >
               <li>Gestion d'équipe</li>
               <li>Création et analyse des tableaux de bords</li>
@@ -470,7 +469,7 @@
         >
           <!-- SOCIAL MEDIAS -->
           <div class="flex-1 text-center">
-            <h2 class="text-2xl font-bold tracking-widest text-indigo-700 mb-3">
+            <h2 class="font-bold tracking-widest text-indigo-700 mb-3">
               SOCIAL MEDIAS
             </h2>
             <div class="flex gap-x-6 justify-center">
