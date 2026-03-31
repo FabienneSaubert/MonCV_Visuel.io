@@ -34,6 +34,16 @@
         }
       }
 
+      .bordure-droite {
+        border-left: none;
+      }
+
+      @media (min-width: 768px) {
+        .bordure-droite {
+          border-left: 2px solid #a5b4fc;
+          padding-left: 2rem;
+        }
+      }
       .wrap-break-word {
         overflow-wrap: break-word;
         word-wrap: break-word;
@@ -207,9 +217,7 @@
         </div>
 
         <!-- COLONNE DROITE -->
-        <section
-          class="md:col-span-2 md:pl-8 border-l-0 md:border-l-2 border-indigo-300 overflow-hidden"
-        >
+        <section class="md:col-span-2 overflow-hidden bordure-droite">
           <div class="mb-8">
             <h2 class="pb-3 mb-5 font-bold tracking-widest text-indigo-700">
               LANGAGES & OUTILS
@@ -350,7 +358,7 @@
             EXPÉRIENCES PROFESSIONNELLES
           </h2>
 
-          <section class="mb-3 space-y-5 p-5 overflow-hidden">
+          <section class="mb-3 space-y-5 overflow-hidden">
             <h3 class="font-bold mb-5">
               Stage de formation développeur - Full remote | Projet "HarmoCare"
               pour les laboratoires RENASCORE
@@ -367,7 +375,7 @@
               <li>Backend : Node.js / Supabase</li>
             </ul>
           </section>
-          <section class="mb-3 space-y-5 p-5">
+          <section class="mb-3 space-y-5">
             <h3 class="font-bold mb-5">
               Formation développeur | Projet "Adopte Un Boss"
             </h3>
@@ -396,7 +404,7 @@
               </li>
             </ul>
           </section>
-          <section class="mb-3 space-y-5 p-5">
+          <section class="mb-3 space-y-5">
             <h3 class="font-bold mb-5">
               Formation développeur | Projet "Netflop"
             </h3>
@@ -422,7 +430,7 @@
               </li>
             </ul>
           </section>
-          <section class="mb-3 space-y-5 p-5">
+          <section class="mb-3 space-y-5">
             <h3 class="font-bold mb-5">
               Formation développeur | Mon CV en ligne
             </h3>
@@ -446,7 +454,7 @@
             </ul>
           </section>
 
-          <section class="mb-3 space-y-5 p-5">
+          <section class="mb-3 space-y-5">
             <h3 class="font-bold">Directrice de magasin | ACTION</h3>
             <h4 class="italic">Juillet 2020 à mars 2024</h4>
             <ul
