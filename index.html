@@ -15,35 +15,28 @@
       html {
         font-size: 12px;
       }
-
-      @media (min-width: 768px) {
-        html {
-          font-size: 14px;
-        }
-      }
       .logo-img {
-        width: 32px;
+        width: 30px;
         max-width: 40px;
         height: auto;
       }
 
-      @media (min-width: 768px) {
-        .logo-img {
-          width: 50px;
-          max-width: 50px;
-        }
+      .logo-img-bigger {
+        width: 45px;
+        max-width: 55px;
+        height: auto;
+      }
+
+      .logo-img-smaller {
+        width: 25px;
+        max-width: 30px;
+        height: auto;
       }
 
       .bordure-droite {
         border-left: none;
       }
 
-      @media (min-width: 768px) {
-        .bordure-droite {
-          border-left: 2px solid #a5b4fc;
-          padding-left: 2rem;
-        }
-      }
       .wrap-break-word {
         overflow-wrap: break-word;
         word-wrap: break-word;
@@ -52,9 +45,6 @@
 
       /* Desktop : à partir de 768px */
       @media (min-width: 768px) {
-        .logo-img {
-          width: 50px;
-        }
         h1 {
           font-size: 1.5rem;
         }
@@ -64,6 +54,25 @@
         p,
         li {
           font-size: 1.125rem;
+        }
+        .bordure-droite {
+          border-left: 2px solid #a5b4fc;
+          padding-left: 2rem;
+        }
+        .logo-img-bigger {
+          width: 65px;
+          max-width: 65px;
+        }
+        .logo-img {
+          width: 50px;
+          max-width: 50px;
+        }
+        .logo-img-smaller {
+          width: 40px;
+          max-width: 40px;
+        }
+        html {
+          font-size: 14px;
         }
       }
     </style>
@@ -253,7 +262,7 @@
                 src="./images/PHP-logo.webp"
                 alt="Logo PHP"
                 title="PHP"
-                class="logo-img mb-5"
+                class="logo-img-bigger mb-5"
               />
               <img
                 src="./images/logoREACT.webp"
@@ -265,7 +274,7 @@
                 src="./images/logoEXPRESS.webp"
                 alt="Logo Express"
                 title="Node JS, Express, MongoDB"
-                class="logo-img"
+                class="logo-img-bigger mb-5"
               />
               <img
                 src="./images/logoVS.webp"
@@ -298,7 +307,7 @@
                 src="./images/logoDOCKER.webp"
                 alt="Logo Docker"
                 title="Docker"
-                class="logo-img mb-5"
+                class="logo-img-bigger mb-5"
               />
               <img
                 src="./images/logoSYMFONY.webp"
@@ -325,13 +334,13 @@
                 src="./images/logoSQL.webp"
                 alt="Logo SQL"
                 title="SQL"
-                class="logo-img"
+                class="logo-img-smaller mb-5"
               />
               <img
                 src="./images/logoMYSQL.webp"
                 alt="Logo MySQL"
                 title="MySQL"
-                class="logo-img"
+                class="logo-img-bigger mb-5"
               />
               <img
                 src="./images/logoGREEN.webp"
@@ -343,13 +352,13 @@
                 src="./images/logoLINUX.webp"
                 alt="logo Linux"
                 title="WSL Ubuntu"
-                class="logo-img"
+                class="logo-img-smaller"
               />
               <img
                 src="./images/logoWINDOWS.webp"
                 alt="logo Windows"
                 title="Windows"
-                class="logo-img"
+                class="logo-img-smaller"
               />
             </div>
           </div>
