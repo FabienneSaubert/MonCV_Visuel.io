@@ -1,17 +1,19 @@
 let toggle = document.getElementById("btnSombre");
 let body = document.body;
 
-if (localStorage.getItem("dark-mode") === "enabled") {
+// Appliquer le thème système au chargement
+if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
   body.classList.add("dark-mode");
   toggle.checked = true;
+} else {
+  body.classList.remove("dark-mode");
+  toggle.checked = false;
 }
 
 toggle.addEventListener("change", () => {
   if (toggle.checked) {
     body.classList.add("dark-mode");
-    localStorage.setItem("dark-mode", "enabled");
   } else {
     body.classList.remove("dark-mode");
-    localStorage.setItem("dark-mode", "disabled");
   }
 });
