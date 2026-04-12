@@ -73,6 +73,7 @@ input:checked + .slider::before {
 
 .slider {
   position: absolute;
+  inset: 0;
   cursor: pointer;
   top: 0;
   left: 0;
@@ -85,6 +86,7 @@ input:checked + .slider::before {
 
 .slider::before {
   position: absolute;
+  will-change: transform;
   content: "";
   height: 20px;
   width: 20px;
